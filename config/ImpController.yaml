@@ -1,0 +1,27 @@
+imp_ctrl:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 100  
+
+  # Impedance Controller ---------------------------------------
+  impedance_controller:
+    type: rct_impedance_control/ImpedanceController
+    joints: 
+         - m1n6s200_joint_1
+         - m1n6s200_joint_2
+         - m1n6s200_joint_3
+         - m1n6s200_joint_4
+         - m1n6s200_joint_5
+         - m1n6s200_joint_6
+    ft_sensor:
+         - ft_sensor
+
+
+
+
+
+
+
+
+
